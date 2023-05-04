@@ -20,8 +20,15 @@
     <h1 class="title">ITST 304</h1>
     <p>This is a sample snake game using Javascript =)</p>
     <canvas id="canvas" style="height: 400px;width:300;border: 1px solid;"></canvas>
+    <button id="reviewBtn">Leave a Review</button>
     <script src="snake.js"></script>
   </div>
   <script src="js/main.js"></script>
+  <script>
+    const reviewBtn = document.querySelector("#reviewBtn");
+    reviewBtn.addEventListener("click", () => {
+      alert("Thank you for playing our game! Please leave a review to help us improve.");
+    });
+  </script>
 </body>
 </html>
